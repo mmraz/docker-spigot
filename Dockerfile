@@ -17,7 +17,8 @@ ENV SPIGOT_HOME=/minecraft \
     SPIGOT_VER=latest \
     SPIGOT_AUTORESTART=yes \
     MC_MAXMEM= \
-    MC_MINMEM=
+    MC_MINMEM= \
+    MC_JAVA_OPTS=
 
 # add extra files needed
 COPY rootfs /

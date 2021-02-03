@@ -133,6 +133,11 @@ sets the initial memory reservation used, use <size>m for Mb or <size>g for Gb, 
 
     -e MC_MINMEM=512m
 
+#### MC_JAVA_OPTS
+
+Sets the additional Java options at server runtime
+
+    -e MC_JAVA_OPTS="-XX:+UseConcMarkSweepGC -XX:+CrashOnOutOfMemoryError -XX:-CreateMinidumpOnCrash"
 
 #### SPIGOT_AUTORESTART
 

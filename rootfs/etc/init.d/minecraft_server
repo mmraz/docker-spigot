@@ -31,8 +31,7 @@ if [ -z  "$MC_MINMEM" ]; then
   MC_MINMEM=$MC_MAXMEM ;
 fi
 
-# Add $OTHER_JAVA_OPS to let the user determine what options they need
-MC_JAVA_OPS="-Xmx$MC_MAXMEM -Xms$MC_MINMEM $OTHER_JAVA_OPS"   # java options for minecraft server
+MC_JAVA_OPS="-Xmx$MC_MAXMEM -Xms$MC_MINMEM $MC_JAVA_OPTS"   # java options for minecraft server
 
 JAVACMD=$(which java)
 

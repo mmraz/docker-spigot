@@ -31,8 +31,14 @@ Due to legal reasons you can build it yourself but you can't redistribute the fi
 
 ## Starting the container
 
-To run the latest stable version of this docker image run
+	
+To build from source, at the root of the repository, run
 
+	docker build . -t nimmis/spigot
+	
+To run the latest stable version of this docker image, run
+
+	docker pull nimmis/spigot:latest
 	docker run -d -p 25565:25565 -e EULA=true nimmis/spigot
 
 the parameter
